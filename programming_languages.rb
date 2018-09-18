@@ -3,7 +3,7 @@ def reformat_languages(languages)
   languages.each do |style, hash|
     hash.each do |language, hash2|
       
-      new_hash[language] = {hash2, style}
+      new_hash[language] = {hash2, :style => style}
     end 
   end 
 end
